@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preachersrec.DashboardController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="344.0">
+         <children>
+            <AnchorPane layoutY="245.0" prefHeight="261.0" prefWidth="365.0" style="-fx-background-color: #86AA72;">
+               <effect>
+                  <DropShadow height="0.0" offsetY="1.5" radius="0.0" spread="0.34" width="0.0" />
+               </effect>
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="206.0" layoutY="26.0" onAction="#Finance" prefHeight="73.0" prefWidth="112.0" style="-fx-background-color: #C3B982;" text="Finance" textFill="#7d2d26">
+                     <graphic>
+                        <FontAwesomeIcon fill="#8a2f28" glyphName="DOLLAR" size="18PX" />
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="207.0" layoutY="120.0" onAction="#exitScreen" prefHeight="73.0" prefWidth="112.0" style="-fx-background-color: #C3B982;" text="Exit" textFill="#7d2d26">
+                     <graphic>
+                        <FontAwesomeIcon fill="#8a2f28" glyphName="SHARE" size="18px" />
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="26.0" onAction="#registration" prefHeight="73.0" prefWidth="112.0" style="-fx-background-color: #C3B982;" text="Register" textFill="#7d2d26">
+                     <graphic>
+                        <FontAwesomeIcon fill="#8a2f28" glyphName="PLUS" size="18PX" />
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="46.0" layoutY="120.0" onAction="#recordsSafe" prefHeight="73.0" prefWidth="112.0" style="-fx-background-color: #C3B982;" text="Records" textFill="#7d2d26">
+                     <graphic>
+                        <FontAwesomeIcon fill="#8a2f28" glyphName="FILE" size="18px" />
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="290.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@blur-books-close-up-159866.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

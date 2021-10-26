@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="345.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preachersrec.SignupController">
+   <children>
+      <JFXTextField fx:id="user" focusColor="#698c22" labelFloat="true" layoutX="57.0" layoutY="83.0" prefHeight="33.0" prefWidth="231.0" promptText="User Name" unFocusColor="#bf0000">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pass" focusColor="#698c22" labelFloat="true" layoutX="57.0" layoutY="137.0" prefHeight="33.0" prefWidth="231.0" promptText="Password" unFocusColor="#bf0000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="name" focusColor="#698c22" labelFloat="true" layoutX="57.0" layoutY="190.0" prefHeight="33.0" prefWidth="231.0" promptText="First Name" unFocusColor="#bf0000">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="othername" focusColor="#698c22" labelFloat="true" layoutX="57.0" layoutY="244.0" prefHeight="33.0" prefWidth="231.0" promptText="Other Name" unFocusColor="#bf0000">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="phone" focusColor="#698c22" labelFloat="true" layoutX="57.0" layoutY="296.0" prefHeight="33.0" prefWidth="231.0" promptText="Phone" unFocusColor="#bf0000">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="20.0" layoutY="13.0" text="Sign UP" textFill="#752d2d">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="sign" buttonType="RAISED" layoutX="157.0" layoutY="367.0" onAction="#indivdualSign" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #4A4A4A;" text="Signup" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#9a1919" />
+                  <Stop color="#d3d127" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\commons-lang-2.6.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\commons-logging-1.2.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\fontawesomefx-8.1.1.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\hsqldb-2.5.0.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\jackcess-3.0.1.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\jfoenix-8.0.8.jar",
+        "c:\\Users\\Morvic\\Documents\\NetBeansProjects\\PreachersRec\\lib\\ucanaccess-5.0.0.jar"
+    ]
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preachersrec.ChurchtablerecordsController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="671.0" prefWidth="914.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="#1f61ffa6" layoutX="641.0" layoutY="352.0" radius="213.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="46.0" />
+            <Polygon fill="#336594" layoutX="200.0" layoutY="523.0" points="-251.0, 45.0, 77.0, -193.0, -200.0, -309.0" stroke="TRANSPARENT" strokeType="INSIDE" translateY="150.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="-51.0" />
+            <TableView fx:id="registertbl" layoutY="29.0" onMouseClicked="#getselectedregisteritem" prefHeight="524.0" prefWidth="914.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+               <columns>
+                  <TableColumn fx:id="registerfname" prefWidth="75.0" text="FirstName" />
+                  <TableColumn fx:id="registerothname" prefWidth="75.0" text="Other Names" />
+                  <TableColumn fx:id="registerage" prefWidth="75.0" text="Age" />
+                  <TableColumn fx:id="registertwn" prefWidth="75.0" text="Town" />
+                  <TableColumn fx:id="registerphne" prefWidth="75.0" text="Phone" />
+                  <TableColumn fx:id="registeremail" prefWidth="75.0" text="E-Mail" />
+                  <TableColumn fx:id="registerfellow" prefWidth="75.0" text="Fellowship" />
+                  <TableColumn fx:id="registergender" prefWidth="75.0" text="Gender" />
+               </columns></TableView>
+            <TableView fx:id="usertbl" layoutY="29.0" prefHeight="524.0" prefWidth="914.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0" />
+            <TableView fx:id="expensetbl" layoutY="29.0" onMouseClicked="#getselectedexpenseitem" prefHeight="524.0" prefWidth="914.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+               <columns>
+                  <TableColumn fx:id="tableid" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="tableDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="tableutilities" prefWidth="75.0" text="Utilities" />
+                  <TableColumn fx:id="tableallowance" prefWidth="75.0" text="Allowance" />
+                  <TableColumn fx:id="tablecharity" prefWidth="75.0" text="Charity" />
+                  <TableColumn fx:id="tabletitbook" prefWidth="75.0" text="Tithe Book" />
+                  <TableColumn fx:id="tabletransport" prefWidth="75.0" text="Transport" />
+                  <TableColumn fx:id="tableothers" prefWidth="75.0" text="Others" />
+               </columns></TableView>
+            <TableView fx:id="financetbl" layoutY="29.0" onMouseClicked="#getselectedfinanceitem" prefHeight="524.0" prefWidth="914.0" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+               <columns>
+                  <TableColumn fx:id="financeid" prefWidth="68.0" text="ID" />
+                  <TableColumn fx:id="financeDate" prefWidth="83.0" text="Date" />
+                  <TableColumn fx:id="financememdues" prefWidth="88.0" text="Membership Dues" />
+                  <TableColumn fx:id="financethkgiving" prefWidth="75.0" text="Thanks-Giving" />
+                  <TableColumn fx:id="financetithe" prefWidth="74.0" text="Tithe" />
+                  <TableColumn fx:id="financespecoff" prefWidth="71.0" text="Special Offering" />
+                  <TableColumn fx:id="financeotherdues" prefWidth="69.0" text="Other Dues" />
+                  <TableColumn fx:id="financecollect" prefWidth="75.0" text="Collections" />
+                  <TableColumn fx:id="financefnndues" text="Funeral Dues" />
+                  <TableColumn fx:id="financepe" prefWidth="76.0" text="Pastors and Elders" />
+                  <TableColumn fx:id="financetithbk" prefWidth="70.0" text="Tithe Book" />
+                  <TableColumn fx:id="financebapcard" prefWidth="76.0" text="Baptismal Card" />
+                  <TableColumn fx:id="financeharvest" prefWidth="70.0" text="Annual Harvest" />
+                  <TableColumn fx:id="financerefund" prefWidth="75.0" text="Refund" />
+               </columns></TableView>
+            <MenuBar fx:id="mdmenu" prefHeight="29.0" prefWidth="925.0" style="-fx-background-color: #E1E9FE; -fx-text-fill: #F79029;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" style="-fx-text-fill: #ffff;" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#registration" text="Register" />
+                        <MenuItem mnemonicParsing="false" onAction="#Finance" text="Finance" />
+                        <MenuItem mnemonicParsing="false" onAction="#recordsSafe" text="Table Records" />
+                        <MenuItem mnemonicParsing="false" onAction="#backScreen" text="Back" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#updatetblx" text="Update Table" />
+                        <MenuItem mnemonicParsing="false" onAction="#updatetblx" text="Delete From Table" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#exitScreen" text="Exit Application" />
+              </menus>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </MenuBar>
+            <VBox alignment="CENTER" layoutX="-2.0" layoutY="446.0" prefHeight="171.0" prefWidth="900.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="900.0" spacing="8.0">
+                     <children>
+                        <JFXButton fx:id="searchbtn" contentDisplay="RIGHT" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #535353;" text="Search" textFill="#fcfcfc">
+                           <graphic>
+                              <FontAwesomeIcon fill="#9effe0" glyphName="SEARCH" size="15px" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <ComboBox fx:id="tablename" onAction="#combosty" prefHeight="25.0" prefWidth="125.0" promptText="Choose Table" />
+                        <JFXTextField fx:id="searchfield" focusColor="#24ff48" prefHeight="29.0" prefWidth="218.0" promptText="Enter id to Search" unFocusColor="#ae3a00">
+                           <font>
+                              <Font size="13.0" />
+                           </font></JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="900.0" spacing="9.0">
+                     <children>
+                        <JFXButton fx:id="userbtn" onAction="#showusertbl" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #F79029;" text="User Table" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="financebtn" onAction="#showfinancetbl" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #F79029;" text="Finance Table" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="expensebtn" layoutX="469.0" layoutY="31.0" onAction="#showexpenstbl" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #F79029;" text="Expense Table" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="registerbtn" layoutX="414.0" layoutY="31.0" onAction="#showregistertbl" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #F79029;" text="Register Table" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preachersrec.ChurchexpensesController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="700.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="#f5dd57" layoutX="623.0" layoutY="451.0" radius="209.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="150.0" translateY="150.0" AnchorPane.bottomAnchor="74.0" AnchorPane.rightAnchor="87.0" />
+            <VBox layoutX="227.0" layoutY="145.0" maxHeight="850.0" maxWidth="600.0" prefHeight="261.0" prefWidth="283.0" spacing="26.0" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="227.0" AnchorPane.topAnchor="145.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="206.0">
+                     <children>
+                        <Label text="Utilities">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="utilities" promptText="Enter Value" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="6.0" right="6.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="224.0">
+                     <children>
+                        <Label text="Allowance">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="13.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="allowance" promptText="Enter Value" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="6.0" right="6.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="216.0">
+                     <children>
+                        <Label text="Charity">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets right="7.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="charity" promptText="Enter Value" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="6.0" right="6.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="216.0">
+                     <children>
+                        <Label text="Tithe Book">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tithe" promptText="Enter Value" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="6.0" right="6.0" />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" layoutY="653.0" prefHeight="37.0" prefWidth="891.0" spacing="30.0" AnchorPane.bottomAnchor="44.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#changefin22" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #F79029;" text="Finance" textFill="WHITE" />
+                  <JFXButton buttonType="RAISED" onAction="#Expensescount" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #22A7F2;" text="Submit" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </HBox>
+            <Pane layoutX="510.0" layoutY="136.0" prefHeight="200.0" prefWidth="263.0" AnchorPane.bottomAnchor="318.0" AnchorPane.rightAnchor="118.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Transportations">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="55.0" text="Others">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="transport" layoutX="110.0" layoutY="3.0" promptText="Enter Value" />
+                  <TextField fx:id="others" layoutX="110.0" layoutY="52.0" promptText="Enter Value" />
+                  <JFXDatePicker fx:id="datePx" layoutX="110.0" layoutY="92.0" onAction="#calender" prefHeight="25.0" prefWidth="149.0" promptText="dd/mm/yyyy">
+                     <defaultColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#2583e1" />
+                              <Stop color="#2583e1" offset="0.007662835249042145" />
+                              <Stop color="#227522" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </defaultColor>
+                  </JFXDatePicker>
+                  <Label fx:id="datele" alignment="CENTER" layoutX="45.0" layoutY="92.0" prefHeight="25.0" prefWidth="58.0" text="Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox prefHeight="654.0" prefWidth="194.0" style="-fx-background-color: #4171C9;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="87.0" prefWidth="194.0" style="-fx-background-color: #F79029;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#registration" prefHeight="54.0" prefWidth="197.0" text="Register" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ff83" />
+                              <Stop color="#00ff83" offset="0.007662835249042145" />
+                              <Stop color="#ffa600" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" size="18PX" />
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="97.0" onAction="#Finance" prefHeight="54.0" prefWidth="197.0" text="Finance" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ff83" />
+                              <Stop color="#00ff83" offset="0.007662835249042145" />
+                              <Stop color="#ffa600" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" size="18PX" />
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="151.0" onAction="#recordsSafe" prefHeight="54.0" prefWidth="197.0" text="Table Records" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ff83" />
+                              <Stop color="#00ff83" offset="0.007662835249042145" />
+                              <Stop color="#ffa600" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="FILE" size="18px" />
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="205.0" onAction="#backScreen" prefHeight="54.0" prefWidth="197.0" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ff83" />
+                              <Stop color="#00ff83" offset="0.007662835249042145" />
+                              <Stop color="#ffa600" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SHARE" size="18px" />
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="44.0" prefHeight="68.0" prefWidth="113.0" text="WPCM-">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="44.0" prefHeight="68.0" prefWidth="97.0" text="Expense">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

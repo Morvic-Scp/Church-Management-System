@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preachersrec.RecordsupdatetableController">
+   <children>
+      <AnchorPane fx:id="registerAnchor" prefHeight="741.0" prefWidth="926.0">
+         <children>
+            <HBox prefHeight="591.0" prefWidth="926.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefHeight="596.0" prefWidth="256.0" spacing="10.0" style="-fx-background-color: #0F5197;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="206.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXTextField fx:id="Fn" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="E.g..Fredrick" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="224.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="otn" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="E.g..Amissah Arthur" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="216.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="age" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Age" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="216.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="twn" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Location or Town" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="37.0" prefWidth="206.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="tel" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Tel Number" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="478.0" prefHeight="37.0" prefWidth="206.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="email" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="register@gmail.com" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="364.0" prefHeight="36.0" prefWidth="265.0">
+                           <children>
+                              <ComboBox fx:id="fellows" prefHeight="25.0" prefWidth="202.0" promptText="Fellowship" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="265.0">
+                           <children>
+                              <ComboBox fx:id="gender" prefHeight="25.0" prefWidth="202.0" promptText="Gender" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="291.0" prefWidth="255.0" spacing="15.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="93.0" layoutY="25.0" onAction="#deleterowregister" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #199F5F;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="TRASH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#updatedatabaseregister" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #FCB215;" text="Update" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="registertbl" onMouseClicked="#getselectedregisteritem" prefHeight="717.0" prefWidth="681.0">
+                     <columns>
+                        <TableColumn fx:id="registerfname" prefWidth="75.0" text="FirstName" />
+                        <TableColumn fx:id="registerothname" prefWidth="75.0" text="Other Names" />
+                        <TableColumn fx:id="registerage" prefWidth="75.0" text="Age" />
+                        <TableColumn fx:id="registertwn" prefWidth="75.0" text="Town" />
+                        <TableColumn fx:id="registerphne" prefWidth="75.0" text="Phone" />
+                        <TableColumn fx:id="registeremail" prefWidth="75.0" text="E-Mail" />
+                        <TableColumn fx:id="registerfellow" prefWidth="75.0" text="Fellowship" />
+                        <TableColumn fx:id="registergender" prefWidth="75.0" text="Gender" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="expenseanchor" prefHeight="741.0" prefWidth="926.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="591.0" prefWidth="926.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefHeight="673.0" prefWidth="266.0" spacing="10.0" style="-fx-background-color: #0F5197;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="206.0">
+                           <children>
+                              <JFXTextField fx:id="utilities" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Utilities" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="224.0">
+                           <children>
+                              <JFXTextField fx:id="allowance" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Allowance" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="216.0">
+                           <children>
+                              <JFXTextField fx:id="charity" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Charity" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="216.0">
+                           <children>
+                              <JFXTextField fx:id="tithe" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Tithe Book" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="37.0" prefWidth="206.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="transport" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Transportations" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="478.0" prefHeight="37.0" prefWidth="206.0">
+                           <opaqueInsets>
+                              <Insets left="6.0" right="6.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXTextField fx:id="others" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Others" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="313.0" prefWidth="256.0" spacing="15.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="93.0" layoutY="25.0" onAction="#deleterowexpense" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #199F5F;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="TRASH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#updatedatabase" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #FCB215;" text="Update" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="expensetbl" onMouseClicked="#getselectedexpenseitem" prefHeight="717.0" prefWidth="675.0">
+                     <columns>
+                        <TableColumn fx:id="tableid" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="tableDate" prefWidth="75.0" text="Date" />
+                        <TableColumn fx:id="tableutilities" prefWidth="75.0" text="Utilities" />
+                        <TableColumn fx:id="tableallowance" prefWidth="75.0" text="Allowance" />
+                        <TableColumn fx:id="tablecharity" prefWidth="92.0" text="Charity" />
+                        <TableColumn fx:id="tabletitbook" prefWidth="86.0" text="Tithe Book" />
+                        <TableColumn fx:id="tabletransport" prefWidth="86.0" text="Transport" />
+                        <TableColumn fx:id="tableothers" prefWidth="97.0" text="Others" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="financeanchor" prefHeight="741.0" prefWidth="926.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="591.0" prefWidth="926.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefHeight="717.0" prefWidth="268.0" spacing="10.0" style="-fx-background-color: #0F5197;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="memdues" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Membership Dues" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="tite" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Tithe" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="380.0" prefHeight="41.0" prefWidth="220.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="thkgiv" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Thanks-Giving" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="480.0" prefHeight="37.0" prefWidth="220.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="spoff" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Special Offering" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="565.0" prefHeight="34.0" prefWidth="220.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="otherdues" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Other Dues" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="584.0" prefHeight="38.0" prefWidth="220.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="collection" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Collections" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="funDues" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Funeral Dues" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="220.0" prefHeight="38.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="PEs" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Pasters &amp; Elders" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="685.0" prefHeight="34.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="titbook" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Tithe Book" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="695.0" prefHeight="38.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="BapCard" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Baptismal Card" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="AnnHarv" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Annual Harvest" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="715.0" prefHeight="36.0" prefWidth="297.0" spacing="8.0">
+                           <children>
+                              <JFXTextField fx:id="refund" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="213.0" promptText="Refund" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#08b5ee" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="146.0" prefWidth="250.0" spacing="15.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="93.0" layoutY="25.0" onAction="#deleterowfinance" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #199F5F;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="TRASH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#updatedatabasefinance" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #FCB215;" text="Update" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="18px" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="financetbl" onMouseClicked="#getselectedfinanceitem" prefHeight="717.0" prefWidth="675.0">
+                     <columns>
+                        <TableColumn fx:id="financeid" prefWidth="68.0" text="ID" />
+                        <TableColumn fx:id="financeDate" prefWidth="83.0" text="Date" />
+                        <TableColumn fx:id="financememdues" prefWidth="88.0" text="Membership Dues" />
+                        <TableColumn fx:id="financethkgiving" prefWidth="75.0" text="Thanks-Giving" />
+                        <TableColumn fx:id="financetithe" prefWidth="74.0" text="Tithe" />
+                        <TableColumn fx:id="financespecoff" prefWidth="71.0" text="Special Offering" />
+                        <TableColumn fx:id="financeotherdues" prefWidth="69.0" text="Other Dues" />
+                        <TableColumn fx:id="financecollect" prefWidth="75.0" text="Collections" />
+                        <TableColumn fx:id="financefnndues" text="Funeral Dues" />
+                        <TableColumn fx:id="financepe" prefWidth="76.0" text="Pastors and Elders" />
+                        <TableColumn fx:id="financetithbk" prefWidth="70.0" text="Tithe Book" />
+                        <TableColumn fx:id="financebapcard" prefWidth="76.0" text="Baptismal Card" />
+                        <TableColumn fx:id="financeharvest" prefWidth="70.0" text="Annual Harvest" />
+                        <TableColumn fx:id="financerefund" prefWidth="75.0" text="Refund" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
